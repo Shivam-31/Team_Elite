@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-image: url('background.jpg'); /* Path to the image */
+    background-size: cover; /* Ensure the image covers the viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    height: 100vh; /* Full viewport height */
+    background-image: rgba(255, 255, 255, 0.5);
+}
+
+/* Header Styles */
+header {
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease-out;
+}
+
+header p {
+    display : inline-block;
+    background-color: blue;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    animation: slideUp 1s ease-out;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block; /* Forces the button to occupy a new line */
+    margin-top: 20px; /* Adds spacing between the paragraph and the button */
+    padding: 15px 30px;
+    background-color: #ff5722;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    animation: fadeIn 2s ease-out;
+}
+
+.cta-button:hover {
+    background-color: #e64a19;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    animation: fadeInUp 2s ease-out;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+    animation: fadeIn 2s ease-out;
+}
+
+.feature {
+    background-color: #007bff;
+    color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature h3 {
+    font-size: 1.6em;
+    margin-bottom: 15px;
+}
+
+.feature p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature {
+        width: 90%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1em;
+    }
+}

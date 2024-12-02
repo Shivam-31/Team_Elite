@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Ticket - Transport Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Book Your Ticket</h1>
+  <nav>
+    <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="payment.html">Payment</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="booking">
+  <form id="bookingForm">
+    <label for="transport">Choose Transport:</label>
+    <select id="transport" required>
+      <option value="airline">Flight</option>
+      <option value="train">Train</option>
+    </select>
+
+    <label for="departure">Departure City:</label>
+    <select id="departure" required>
+      <option value="">Select a City</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Pune">Pune</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Lucknow">Lucknow</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Surat">Surat</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Indore">Indore</option>
+      <option value="Visakhapatnam">Visakhapatnam</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Coimbatore">Coimbatore</option>
+      <option value="Vadodara">Vadodara</option>
+      <option value="Kochi">Kochi</option>
+      <option value="Patna">Patna</option>
+      <option value="Kanpur">Kanpur</option>
+      <option value="Goa">Goa</option>
+      <option value="Ludhiana">Ludhiana</option>
+      <option value="Agra">Agra</option>
+      <option value="Rajkot">Rajkot</option>
+      <option value="Madurai">Madurai</option>
+      <option value="Mysore">Mysore</option>
+      <option value="Faridabad">Faridabad</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Trivandrum">Trivandrum</option>
+      <option value="Shimla">Shimla</option>
+      <option value="Udaipur">Udaipur</option>
+      <!-- More cities can be added here -->
+    </select>
+
+    <label for="arrival">Arrival City:</label>
+    <select id="arrival" required>
+      <option value="">Select a City</option>
+      <option value="Delhi">Delhi</option>
+      <option value="Mumbai">Mumbai</option>
+      <option value="Bangalore">Bangalore</option>
+      <option value="Chennai">Chennai</option>
+      <option value="Kolkata">Kolkata</option>
+      <option value="Hyderabad">Hyderabad</option>
+      <option value="Pune">Pune</option>
+      <option value="Jaipur">Jaipur</option>
+      <option value="Ahmedabad">Ahmedabad</option>
+      <option value="Lucknow">Lucknow</option>
+      <option value="Chandigarh">Chandigarh</option>
+      <option value="Surat">Surat</option>
+      <option value="Bhopal">Bhopal</option>
+      <option value="Indore">Indore</option>
+      <option value="Visakhapatnam">Visakhapatnam</option>
+      <option value="Nagpur">Nagpur</option>
+      <option value="Coimbatore">Coimbatore</option>
+      <option value="Vadodara">Vadodara</option>
+      <option value="Kochi">Kochi</option>
+      <option value="Patna">Patna</option>
+      <option value="Kanpur">Kanpur</option>
+      <option value="Goa">Goa</option>
+      <option value="Ludhiana">Ludhiana</option>
+      <option value="Agra">Agra</option>
+      <option value="Rajkot">Rajkot</option>
+      <option value="Madurai">Madurai</option>
+      <option value="Mysore">Mysore</option>
+      <option value="Faridabad">Faridabad</option>
+      <option value="Nashik">Nashik</option>
+      <option value="Trivandrum">Trivandrum</option>
+      <option value="Shimla">Shimla</option>
+      <option value="Udaipur">Udaipur</option>
+      <!-- More cities can be added here -->
+    </select>
+
+    <label for="seat">Seat Number:</label>
+    <input type="number" id="seat" required>
+
+    <button type="submit">Book Now</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2024 Transport Management System</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
